@@ -1,0 +1,59 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "email": "kihahumutagah254@gmail.com",
+      "age": "24",
+      "role": "Graduate Trainee",
+      "image": "https://thispersondoesnotexist.com/",
+      "contract-terms": "permanent"
+    },
+    {
+      "id": "2",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "email": "kihahumutagah254@gmail.com",
+      "age": "24",
+      "role": "Graduate Trainee",
+      "image": "https://thispersondoesnotexist.com/",
+      "contract-terms": "temporary"
+    },
+    {
+      "id": "3",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "email": "kihahumutagah254@gmail.com",
+      "age": "24",
+      "role": "Graduate Trainee",
+      "image": "https://thispersondoesnotexist.com/",
+      "contract-terms": "permanent"
+    },
+    {
+      "id": "4",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "email": "kihahumutagah254@gmail.com",
+      "age": "24",
+      "role": "Graduate Trainee",
+      "image": "https://thispersondoesnotexist.com/",
+      "contract-terms": "temporary"
+    },
+    {
+      "id": "5",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "email": "kihahumutagah254@gmail.com",
+      "age": "24",
+      "role": "Graduate Trainee",
+      "image": "https://thispersondoesnotexist.com/",
+      "contract-terms": "permanent"
+    }
+  ]
+}
