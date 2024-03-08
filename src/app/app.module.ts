@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeesService } from './service/employees.service';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
-    HomeComponent
+    HomeComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,
