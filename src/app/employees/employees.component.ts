@@ -11,11 +11,15 @@ export class EmployeesComponent implements OnInit {
   title = 'Tabulated Employees';
 
   constructor(private employees: EmployeesService) {}
-  
+  employeesList!: any;
   ngOnInit(): void {
+    this.getEmployees();
+  }
+  private getEmployees() {
     this.employees.getEmployees().subscribe({
-      next: (res: any) => {console.log(res)},
+      next: (res: any) => {
+        return (this.employeesList = res);
+      },
     });
   }
-  
 }
