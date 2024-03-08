@@ -1,1 +1,201 @@
-<p>create-employee works!</p>
+<div class="container my-5">
+  <div class="row">
+    <div class="card col-md-10 mx-auto" style="background-color: #bea990">
+      <div class="row">
+        <h3 class="text-center m-2">{{ formTitle }}</h3>
+        <hr />
+        <div class="card-body">
+          <form class="p-3" [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+            <div class="row m-3">
+              <div class="form-group col-6">
+                <label> First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="firstName"
+                  formControlName="firstName"
+                />
+                <small
+                  *ngIf="
+                    employeeForm.get('firstName')?.invalid &&
+                    employeeForm.get('firstName')?.touched
+                  "
+                  >First Name is a required field
+                </small>
+              </div>
+
+              <div class="form-group col-6">
+                <label> Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="lastName"
+                  formControlName="lastName"
+                />
+                <small
+                  *ngIf="
+                    employeeForm.get('lastName')?.invalid &&
+                    employeeForm.get('lastName')?.touched
+                  "
+                  >Last Name is a required field
+                </small>
+              </div>
+            </div>
+
+            <div class="row m-3d-flex justify-content-around m-3">
+              <div class="col-8">
+                <div class="text-center">
+                  <label class="m-2">Select gender</label>
+                </div>
+                <div class="row p-2">
+                  <div class="form-check col-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      formControlName="gender"
+                      value="male"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Male
+                    </label>
+                  </div>
+
+                  <div class="form-check col-3">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      formControlName="gender"
+                      value="female"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Female
+                    </label>
+                  </div>
+
+                  <div class="form-check col-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      value="none"
+                      formControlName="gender"
+                    />
+                    <label class="form-check-label"> Prefer not to say </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-2">
+                <div class="form-group">
+                  <label class="m-2"> Age</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    formControlName="age"
+                  />
+                  <small
+                    *ngIf="
+                      employeeForm.get('age')?.invalid &&
+                      employeeForm.get('age')?.touched
+                    "
+                    >Age is not valid
+                  </small>
+                  <br />
+                  <small
+                    *ngIf="
+                      employeeForm.get('age')?.touched &&
+                      employeeForm.get('age')?.errors?.['min']
+                    "
+                    >Minimum age: 22yrs
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div class="row m-3">
+              <div class="col-6">
+                <div class="form-group">
+                  <label> Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="email"
+                  />
+                  <small
+                    *ngIf="
+                      employeeForm.get('email')?.invalid &&
+                      !employeeForm.get('email')?.errors?.['email'] &&
+                      employeeForm.get('email')?.touched
+                    "
+                    >Email is a required field
+                  </small>
+                  <br />
+                  <small
+                    *ngIf="
+                      employeeForm.get('email')?.errors?.['email'] && employeeForm.get('email')?.touched 
+                    "
+                  >
+                    Email is invalid
+                  </small>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="form-group">
+                  <label> Role</label>
+                  <select class="form-select" formControlName="role">
+                    <option value="null">---Choose option---</option>
+                    <option value="graduate-trainee">Graduate Trainee</option>
+                    <option value="senior-backend-developer">
+                      Senior Backend Developer
+                    </option>
+                    <option value="senior-frontend-developer">
+                      Senior Frontend Developer
+                    </option>
+                    <option value="intermediate-backend-developer">
+                      Intermediate Backend Developer
+                    </option>
+                    <option value="intermediate-frontend-developer">
+                      Intermediate Frontend Developer
+                    </option>
+                    <option value="junior-backend-developer">
+                      Junior Backend Developer
+                    </option>
+                    <option value="junior-frontend-developer">
+                      Junior Frontend Developer
+                    </option>
+                  </select>
+                  <small
+                    *ngIf="
+                      employeeForm.get('role')?.invalid &&
+                      employeeForm.get('role')?.touched
+                    "
+                    >Please select a role</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group col-8 mx-auto">
+              <label> Image</label>
+              <input type="text" class="form-control" formControlName="image" />
+              <small
+                *ngIf="
+                  employeeForm.get('image')?.invalid &&
+                  employeeForm.get('image')?.touched
+                "
+              >
+                Please enter a image url
+              </small>
+            </div>
+
+            <br />
+            <div class="d-flex justify-content-around">
+              <button class="btn btn-primary" type="submit">Submit</button>
+              <button class="btn btn-primary" type="button">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
