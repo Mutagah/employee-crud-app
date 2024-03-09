@@ -9,13 +9,15 @@ import { HomeComponent } from './home/home.component';
 import { EmployeesService } from './service/employees.service';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     HomeComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
