@@ -7,17 +7,17 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { HomeComponent } from './home/home.component';
 import { EmployeesService } from './service/employees.service';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormModalComponent } from './form-modal/form-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     HomeComponent,
-    CreateEmployeeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FormModalComponent
   ],
   imports: [
     BrowserModule,
