@@ -6,7 +6,7 @@
       "lastName": "Kihahu",
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
-      "age": "24",
+      "age": 24,
       "role": "Graduate Trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "permanent"
@@ -17,7 +17,7 @@
       "lastName": "Kihahu",
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
-      "age": "24",
+      "age": 24,
       "role": "Graduate Trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "temporary"
@@ -28,7 +28,7 @@
       "lastName": "Kihahu",
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
-      "age": "24",
+      "age": 24,
       "role": "Graduate Trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "permanent"
@@ -39,7 +39,7 @@
       "lastName": "Kihahu",
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
-      "age": "24",
+      "age": 24,
       "role": "Graduate Trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "temporary"
@@ -50,10 +50,50 @@
       "lastName": "Kihahu",
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
-      "age": "24",
+      "age": 24,
       "role": "Graduate Trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "permanent"
+    },
+    {
+      "id": "2d21",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "age": 23,
+      "email": "kihahumutagah@gmail.com",
+      "role": "graduate-trainee",
+      "image": "https://thispersondoesnotexist.com/"
+    },
+    {
+      "id": "879a",
+      "firstName": "Mutaga",
+      "lastName": "Kihahu",
+      "gender": "male",
+      "age": 23,
+      "email": "kihahumutagah@gmail.com",
+      "role": "graduate-trainee",
+      "image": "https://thispersondoesnotexist.com/"
+    },
+    {
+      "id": "b406",
+      "firstName": "Tasha",
+      "lastName": "Accounts",
+      "gender": "male",
+      "age": 26,
+      "email": "tashacounts254@gmail.com",
+      "role": "junior-frontend-developer",
+      "image": "https://thispersondoesnotexist.com"
+    },
+    {
+      "id": "dd4f",
+      "firstName": "Mutaga",
+      "lastName": "Tasha",
+      "gender": "male",
+      "age": 25,
+      "email": "tashacounts254@gmail.com",
+      "role": "senior-frontend-developer",
+      "image": "https://thispersondoesnotexist.com"
     }
   ]
 }

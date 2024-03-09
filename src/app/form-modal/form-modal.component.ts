@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
+import { EmployeesService } from '../service/employees.service';
+
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-form-modal',
@@ -8,7 +10,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./form-modal.component.scss'],
 })
 export class FormModalComponent {
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(
+    public activeModal: NgbActiveModal,
+    private employeeService: EmployeesService
+  ) {}
 
   formTitle = 'Create Employee';
   employeeForm!: FormGroup;
@@ -33,7 +38,16 @@ export class FormModalComponent {
   }
 
   onSubmit() {
-    console.log(this.employeeForm);
     console.log(this.employeeForm.value);
+    // Posting my data to the json file
+    if (this.employeeForm.valid) {
+      this.employeeService.createEmployee(this.employeeForm.value).subscribe((response) =>
+        console.log('Post Successful', response)
+      );
+      this.employeeForm.reset()
+      this.activeModal.close()
+    } else {
+      console.log('Cannot post you have an error in your form');
+    }
   }
 }
