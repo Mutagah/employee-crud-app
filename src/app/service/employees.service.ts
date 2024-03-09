@@ -16,4 +16,12 @@ export class EmployeesService {
   createEmployee(employeeData: object): Observable<any> {
     return this.http.post(`${this.employeesUrl}`, employeeData);
   }
+
+  getSpecificEmployee(employeeId: number) {
+    return this.http.get(`${this.employeesUrl}/${employeeId}`);
+  }
+
+  patchEmployee(employeeId: number, employeeData: object): Observable<any> {
+    return this.http.patch(`${this.employeesUrl}/${employeeId}`, employeeData);
+  }
 }

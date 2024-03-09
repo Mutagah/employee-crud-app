@@ -2,12 +2,12 @@
   "employees": [
     {
       "id": "1",
-      "firstName": "Mutaga",
-      "lastName": "Kihahu",
+      "firstName": "Scott",
+      "lastName": "Mutaga",
       "gender": "male",
-      "email": "kihahumutagah254@gmail.com",
+      "email": "kihahumutagah@gmail.com",
       "age": 24,
-      "role": "Graduate Trainee",
+      "role": "graduate-trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "permanent"
     },
@@ -18,7 +18,7 @@
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
       "age": 24,
-      "role": "Graduate Trainee",
+      "role": "graduate-trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "temporary"
     },
@@ -29,7 +29,7 @@
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
       "age": 24,
-      "role": "Graduate Trainee",
+      "role": "graduate-trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "permanent"
     },
@@ -40,7 +40,7 @@
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
       "age": 24,
-      "role": "Graduate Trainee",
+      "role": "graduate-trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "temporary"
     },
@@ -51,7 +51,7 @@
       "gender": "male",
       "email": "kihahumutagah254@gmail.com",
       "age": 24,
-      "role": "Graduate Trainee",
+      "role": "graduate-trainee",
       "image": "https://thispersondoesnotexist.com/",
       "contract-terms": "permanent"
     },
@@ -91,6 +91,16 @@
       "lastName": "Tasha",
       "gender": "male",
       "age": 25,
+      "email": "tashacounts254@gmail.com",
+      "role": "senior-frontend-developer",
+      "image": "https://thispersondoesnotexist.com"
+    },
+    {
+      "id": "ee51",
+      "firstName": "Mutaga",
+      "lastName": "Tasha",
+      "gender": "male",
+      "age": 24,
       "email": "tashacounts254@gmail.com",
       "role": "senior-frontend-developer",
       "image": "https://thispersondoesnotexist.com"
