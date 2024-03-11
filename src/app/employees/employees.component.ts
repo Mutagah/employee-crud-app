@@ -13,18 +13,31 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class EmployeesComponent implements OnInit {
   title = 'Tabulated Employees';
+  employeesList: any[] = [];
+  pageSize = 5;
+  page = 1;
+  collectionSize: number = 0;
 
   constructor(private employees: EmployeesService, private modal: NgbModal) {}
-  employeesList!: any;
   ngOnInit(): void {
     this.getEmployees();
   }
+
   private getEmployees() {
     this.employees.getEmployees().subscribe({
       next: (res: any) => {
-        return (this.employeesList = res);
+        this.collectionSize = res.length;
+        this.employeesList = res.slice(
+          (this.page - 1) * this.pageSize,
+          this.page * this.pageSize
+        );
       },
     });
+  }
+
+  onPageChange(event: number) {
+    this.page = event;
+    this.getEmployees();
   }
 
   updateRecord(employeeId: number) {
@@ -40,7 +53,7 @@ export class EmployeesComponent implements OnInit {
         const modalRef = this.modal.open(FormModalComponent, { size: 'lg' });
         modalRef.componentInstance.formData = res;
         modalRef.componentInstance.updateMode = true;
-      }
+      },
     });
   }
 }
