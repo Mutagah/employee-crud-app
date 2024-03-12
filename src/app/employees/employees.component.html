@@ -15,7 +15,9 @@
           <td>{{ employee.lastName }}</td>
           <td>{{ employee.email }}</td>
           <td>
-            <button class="btn btn-primary">Update</button>
+            <button class="btn btn-primary" (click)="updateRecord(employee.id)">
+              Update
+            </button>
             <button class="btn btn-danger" style="margin-left: 10px">
               Delete
             </button>
@@ -26,5 +28,12 @@
         </tr>
       </tbody>
     </table>
+    <ngb-pagination
+      [collectionSize]="collectionSize"
+      [(page)]="page"
+      [pageSize]="pageSize"
+      aria-label="Default pagination"
+      (pageChange)="onPageChange($event)"
+    ></ngb-pagination>
   </div>
 </div>

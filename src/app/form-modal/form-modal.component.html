@@ -1,5 +1,7 @@
 <div class="modal-header">
-  <h4 class="modal-title">Create Employee Form</h4>
+  <h4 class="modal-title">
+    {{ updateMode ? "Update Employee Record" : "Create Employee Form" }}
+  </h4>
   <button
     type="button"
     class="btn-close"
@@ -182,18 +184,17 @@
         Please enter a image url
       </small>
     </div>
-
     <br />
-    <div class="d-flex justify-content-around">
-      <!-- <button class="btn btn-primary" type="button" (click)="onCancel()">
-          Cancel
-        </button> -->
-    </div>
   </form>
 </div>
-<div class="modal-footer">
-  <button class="btn btn-primary" type="button" (click)="onSubmit()">
-    Submit
+<div class="modal-footer d-flex justify-content-around">
+  <button
+    class="btn btn-primary"
+    type="button"
+    (click)="onSubmit()"
+    [disabled]="employeeForm.invalid"
+  >
+    {{ updateMode ? "Update" : "Submit" }}
   </button>
   <button
     type="button"
