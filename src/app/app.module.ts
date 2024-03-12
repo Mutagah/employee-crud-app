@@ -10,6 +10,7 @@ import { EmployeesService } from './service/employees.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormModalComponent } from './form-modal/form-modal.component';
+import { EmployeeModalComponent } from './employee-modal/employee-modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormModalComponent } from './form-modal/form-modal.component';
     EmployeesComponent,
     HomeComponent,
     NavbarComponent,
-    FormModalComponent
+    FormModalComponent,
+    EmployeeModalComponent
   ],
   imports: [
     BrowserModule,

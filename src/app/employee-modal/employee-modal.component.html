@@ -1,0 +1,38 @@
+<div class="modal-header">
+  <h4 class="modal-title">Employee Card</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body container">
+  <div class="row p-2">
+    <div class="col-4">
+      <img
+        [src]="employeeData?.image"
+        alt=""
+        width="100px"
+        height="100px"
+        class="img-fluid"
+        style="border-radius: 50px"
+      />
+    </div>
+    <div class="col">
+      <p>Name: {{ employeeData?.firstName }} {{ employeeData?.lastName }}</p>
+      <p>Email: {{ employeeData?.email }}</p>
+      <p>Age: {{ employeeData?.age }}</p>
+      <p>Role: {{ employeeData?.role }}</p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="activeModal.close('Close click')"
+    >
+      Close
+    </button>
+  </div>
+</div>
