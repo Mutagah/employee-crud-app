@@ -35,7 +35,15 @@
           />
         </div>
       </div>
+      <div class="row mt-3 mx-auto">
+        <div class="col">
+          Are you sure you want to delete {{ firstName.value }}
+          {{ lastName.value }}?
+        </div>
+      </div>
     </div>
+    <p></p>
+
     <div class="modal-footer d-flex justify-content-around">
       <button
         type="submit"
@@ -45,14 +53,14 @@
           lastName.value !== employeeData.lastName
         "
       >
-        Delete
+        Yes
       </button>
       <button
         type="button"
         class="btn btn-outline-dark"
         (click)="activeModal.close('Close click')"
       >
-        Close
+        No
       </button>
     </div>
   </form>
